@@ -19,25 +19,30 @@ public class WebTablePage extends Logic {
            searchPage
                    .cliclpizza()
                    .dobpiz();//выбираем случайную пиццу
+           pizzaOkno.setPreis(searchPage.getPrice());
            pizzaOkno
                    .clicSimplButton()//выбираем маленькая
                    .clicAddButton();//нажимаем добавить
            dopPage
                    .samovivoz()
-                   .vibormesta()
                    .samovivozbut();
+           searchPage.kolvoVkorzine();
        }
         @Test
                 public  void case2(){
-            for (int i = 0; i < 5; i++) {
+            searchPage.cliclpizza().dobavMnog();
+            pizzaOkno.clicSimplButtonmnog().clicAddButtonmnog();
+            dopPage.samovivoz().samovivozbut();
+            for (int i = 0; i < 4; i++) {
                 searchPage
                         .cliclpizza()
-                        .dobpiz();
+                        .dobavMnog();
                 pizzaOkno
-                        .clicSimplButton()
-                        .clicAddButton();
+                        .clicSimplButtonmnog()
+                        .clicAddButtonmnog();
             }//добавляем случайные 5 пицц
             searchPage
+                    .kolvoVkorzinemnoga()
                     .cliclKorzina();//переходим в корзину
             korzinaPage
                     .summaVivod();//выводим общую сумму

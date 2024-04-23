@@ -4,7 +4,7 @@ import com.microsoft.playwright.Locator;
 import com.microsoft.playwright.Page;
 
 public class KorzinaPage {
-    private String summaZakaza = "body > div:nth-child(52) > div > div.sc-7pyz9m-1.bMdtwU > div > div > div.scroll__view > main > div > div.sc-22nn4s-0.bKDVMt > section > div.info > span";
+    private String summaZakaza = "body > div:nth-child(49) > div > div.sc-7pyz9m-1.bMdtwU > div > div > div.scroll__view > main > div > div.sc-22nn4s-0.bKDVMt > section > div.info > span";
 
 
     private Page page;

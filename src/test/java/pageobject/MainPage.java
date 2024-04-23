@@ -8,6 +8,7 @@ import org.junit.jupiter.api.Assertions;
 import java.util.Random;
 
 import static com.microsoft.playwright.assertions.PlaywrightAssertions.assertThat;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 
 public class MainPage {
@@ -20,8 +21,14 @@ public class MainPage {
     private String piZza = "//*[@id=\"guzhy\"]/article";//селектор обьекта с пиццей
     private String region = "//*[@id=\"react-app\"]/header/div[1]/div/span/a";//селектор нахождения региона
     private String korzina = "#react-app > nav > div > div.sc-1uavg9b-5.gGtIbB > button";//селектор корзины
-    private String kontacti = "#react-app > div.sc-1h8wv3w-0.iuAXwo > div > a:nth-child(4)";//селектор контактов
+    private String kontacti = "#react-app > div.sc-1h8wv3w-0.iuAXwo > div > a:nth-child(4)";//селектор кнопки контакты
+    private String chetchicKorzina = "#react-app > nav > div > div.sc-1uavg9b-5.gGtIbB > button > div.sc-1uavg9b-9.iykVRb";//селектор обозначения товаров в корзине
 
+    //селектор контактов
+ private String price;
+ public String getPrice(){
+     return this.price;
+ }
     public MainPage(Page page) {
         this.page = page;
     }
@@ -51,16 +58,27 @@ public class MainPage {
         return this;
     }
 
-    public MainPage dobpiz() {
+    public void dobpiz() {
         Allure.step("выбираем случайную пиццу");
         ElementHandle[] pizzas = page.querySelectorAll(piZza).toArray(new ElementHandle[0]);//создаем массив из товаров в разделе пицца
         Random random = new Random();
         int randomIndex = random.nextInt(pizzas.length);// генерируем случайное число и присваиваем его индексу
         ElementHandle randomPizza = pizzas[randomIndex];// выбираем рандомный эллемент
         String xpaz = randomPizza.innerText();//достаем текст из обьекта случайно выбраного обьекта
-        System.out.println(xpaz);//выводим
-        randomPizza.click();// нажимаем на случайно выбранную пиццу
+        this.price = xpaz;
+        System.out.println(xpaz);
+        randomPizza.click();
 
+    }
+    public MainPage dobavMnog() {
+        Allure.step("выбираем случайную пиццу");
+        ElementHandle[] pizzas = page.querySelectorAll(piZza).toArray(new ElementHandle[0]);//создаем массив из товаров в разделе пицца
+        Random random = new Random();
+        int randomIndex = random.nextInt(pizzas.length);// генерируем случайное число и присваиваем его индексу
+        ElementHandle randomPizza = pizzas[randomIndex];// выбираем рандомный эллемент
+        String xpaz = randomPizza.innerText();//достаем текст из обьекта случайно выбраного обьекта
+        System.out.println(xpaz);
+        randomPizza.click();
         return this;
     }
     public  MainPage cliclKorzina(){
@@ -74,7 +92,21 @@ public class MainPage {
         return this;
 
     }
+    public MainPage kolvoVkorzine(){
+     Allure.step("Проверяем что товар добавлен в корзину и на кнопке появилась единица");
+     String chec = locator(chetchicKorzina).innerText();
+     System.out.println(chec);
+     assertTrue(chec.contains("1"), "товар добавлен ");
+     return this;
 
+    }
+    public MainPage kolvoVkorzinemnoga() {
+        Allure.step("Проверяем что товар добавлен в корзину и на кнопке появилась единица");
+        String chec = locator(chetchicKorzina).innerText();
+        System.out.println(chec);
+        assertTrue(chec.contains("5"), "товар добавлен ");
+        return this;
+    }
 }
 
 
