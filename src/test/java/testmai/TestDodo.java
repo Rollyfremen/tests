@@ -4,7 +4,7 @@ package testmai;
 import org.junit.jupiter.api.Test;
 
 
-public class WebTablePage extends Logic {
+public class TestDodo extends Logic {
 
         @Test
         public void case0() {
