@@ -4,26 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1134d8d0-f546-4f8e-b2e4-70e2c70c5005" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/063eaec7-389f-4e45-a376-4e2545b8d72e-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/282ed17e-e5f7-42ae-9264-ec381421ebe5-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/8f5882b2-e8db-4873-acff-10565a465beb-result.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/settings.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pageobject/MainPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/testmai/Logic.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/testmai/WebTablePage.java" afterDir="false" />
+    <list default="true" id="1134d8d0-f546-4f8e-b2e4-70e2c70c5005" name="Changes" comment="save">
+      <change afterPath="$PROJECT_DIR$/src/test/java/pageobject/DopPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/pageobject/KontacPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/pageobject/KorzinaPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/pageobject/PizzaOkno.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example.png" beforeDir="false" afterPath="$PROJECT_DIR$/example.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pageobject/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pageobject/MainPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testmai/Logic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testmai/Logic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testmai/WebTablePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testmai/WebTablePage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,6 +66,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Rollyfremen&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Rollyfremen/tests.git&quot;,
+    &quot;accountId&quot;: &quot;9aec6ab8-6c44-4150-b371-118d44421921&quot;
+  }
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
 }</component>
@@ -94,6 +96,9 @@
     "Gradle.Dodotest.testopenur.executor": "Run",
     "Gradle.Upgrade Gradle wrapper.executor": "Run",
     "Gradle.WebTablePage.Pofroll.executor": "Run",
+    "Gradle.WebTablePage.case0.executor": "Run",
+    "Gradle.WebTablePage.case1.executor": "Run",
+    "Gradle.WebTablePage.case3.executor": "Run",
     "Gradle.WebTablePage.executor": "Run",
     "Gradle.dodo [:Dodotest.main()].executor": "Run",
     "Gradle.dodo [allureReport].executor": "Run",
@@ -101,11 +106,12 @@
     "Gradle.dodo [check].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "Kostya",
+    "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
     "settings.editor.selected.configurable": "File.Encoding"
   }
 }]]></component>
-  <component name="RunManager" selected="Gradle.WebTablePage">
+  <component name="RunManager" selected="Gradle.WebTablePage.case1">
     <configuration name="WebTablePage" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -130,7 +136,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="WebTablePage.Pofroll" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="WebTablePage.case0" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -143,7 +149,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;testmai.WebTablePage.Pofroll&quot;" />
+            <option value="&quot;testmai.WebTablePage.case0&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -154,26 +160,52 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="dodo [allureReport]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="WebTablePage.case1" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--scan" />
+        <option name="scriptParameters" value="" />
         <option name="taskDescriptions">
           <list />
         </option>
         <option name="taskNames">
           <list>
-            <option value="allureReport" />
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;testmai.WebTablePage.case1&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>false</RunAsTest>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="WebTablePage.case3" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;testmai.WebTablePage.case3&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
     <configuration name="dodo [allureServe]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
@@ -198,42 +230,20 @@
       <RunAsTest>false</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="dodo [check]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="check" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>false</RunAsTest>
-      <method v="2" />
-    </configuration>
     <list>
-      <item itemvalue="Gradle.dodo [allureReport]" />
+      <item itemvalue="Gradle.WebTablePage.case0" />
+      <item itemvalue="Gradle.WebTablePage.case1" />
+      <item itemvalue="Gradle.WebTablePage.case3" />
       <item itemvalue="Gradle.dodo [allureServe]" />
-      <item itemvalue="Gradle.dodo [check]" />
-      <item itemvalue="Gradle.WebTablePage.Pofroll" />
       <item itemvalue="Gradle.WebTablePage" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.WebTablePage.case1" />
+        <item itemvalue="Gradle.WebTablePage.case0" />
+        <item itemvalue="Gradle.WebTablePage.case3" />
         <item itemvalue="Gradle.WebTablePage" />
         <item itemvalue="Gradle.dodo [allureServe]" />
-        <item itemvalue="Gradle.dodo [allureReport]" />
-        <item itemvalue="Gradle.dodo [check]" />
-        <item itemvalue="Gradle.WebTablePage.Pofroll" />
       </list>
     </recent_temporary>
   </component>
@@ -246,9 +256,20 @@
       <option name="presentableId" value="Default" />
       <updated>1713695778744</updated>
     </task>
+    <task id="LOCAL-00001" summary="save">
+      <option name="closed" value="true" />
+      <created>1713808791398</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1713808791398</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="save" />
+    <option name="LAST_COMMIT_MESSAGE" value="save" />
   </component>
 </project>
