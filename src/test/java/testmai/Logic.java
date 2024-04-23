@@ -11,9 +11,9 @@ import java.nio.file.Paths;
 
 
 public class Logic {
-    protected MainPage searchPage;
-    protected PizzaOkno pizzaOkno;
-    protected KorzinaPage korzinaPage;
+    protected MainPage mainPage;
+    protected PizzaPage pizzaPage;
+    protected BasketPage basketPage;
     protected KontacPage kontacPage;
     protected DopPage dopPage;
     Page page;
@@ -26,9 +26,9 @@ public class Logic {
         Browser browser = playwright.chromium().launch(new BrowserType.LaunchOptions().setHeadless(false));
         BrowserContext browserContext = browser.newContext();
         page = browserContext.newPage();
-        searchPage = new MainPage(page);
-        pizzaOkno = new PizzaOkno(page);
-        korzinaPage = new KorzinaPage(page);
+        mainPage = new MainPage(page);
+        pizzaPage = new PizzaPage(page);
+        basketPage = new BasketPage(page);
         kontacPage = new KontacPage(page);
         dopPage = new DopPage(page);
         page.navigate("https://dodopizza.ru/moscow/");

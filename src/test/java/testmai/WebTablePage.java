@@ -2,58 +2,57 @@ package testmai;
 
 
 import org.junit.jupiter.api.Test;
-import pageobject.PizzaOkno;
 
 
 public class WebTablePage extends Logic {
 
         @Test
         public void case0() {
-           searchPage
-                   .cliclpizza()//переходим в раздел пиццы
-                   .kolpizza()// считаем кол-во
-                   .reg();// сверяем регион
+           mainPage
+                   .goToPizzaSection()//переходим в раздел пиццы
+                   .countProducts()// считаем кол-во
+                   .definingRegion();// сверяем регион
         }
        @Test
         public void case1() {
-           searchPage
-                   .cliclpizza()
-                   .dobpiz();//выбираем случайную пиццу
-           pizzaOkno.setPreis(searchPage.getPrice());
-           pizzaOkno
+           mainPage
+                   .goToPizzaSection()//переходим в раздел пиццы
+                   .addRandomItem();//выбираем случайную пиццу
+           pizzaPage.setPrice(mainPage.getPrice());//вытаскиваем необходимый текст что бы проверить соответсвие
+           pizzaPage
                    .clicSimplButton()//выбираем маленькая
                    .clicAddButton();//нажимаем добавить
            dopPage
-                   .samovivoz()
-                   .samovivozbut();
-           searchPage.kolvoVkorzine();
+                   .сhooseRestaurant()//выбираем ресторан
+                   .pressPickupButton();//нажимаем кнопку выбрать
+           mainPage.checkingTheShoppingCart();
        }
         @Test
                 public  void case2(){
-            searchPage.cliclpizza().dobavMnog();
-            pizzaOkno.clicSimplButtonmnog().clicAddButtonmnog();
-            dopPage.samovivoz().samovivozbut();
+            mainPage.goToPizzaSection().addRandomItemLoop();
+            pizzaPage.clicSimplButtonLoop().clicAddButtonLoop();
+            dopPage.сhooseRestaurant().pressPickupButton();
             for (int i = 0; i < 4; i++) {
-                searchPage
-                        .cliclpizza()
-                        .dobavMnog();
-                pizzaOkno
-                        .clicSimplButtonmnog()
-                        .clicAddButtonmnog();
+                mainPage
+                        .goToPizzaSection()
+                        .addRandomItemLoop();
+                pizzaPage
+                        .clicSimplButtonLoop()
+                        .clicAddButtonLoop();
             }//добавляем случайные 5 пицц
-            searchPage
-                    .kolvoVkorzinemnoga()
-                    .cliclKorzina();//переходим в корзину
-            korzinaPage
-                    .summaVivod();//выводим общую сумму
+            mainPage
+                    .carcheckingTheShoppingCartLopp()
+                    .basketClicl();//переходим в корзину
+            basketPage
+                    .theAmountIsVisible();//выводим общую сумму
             }
             @Test
     public void case3() {
 
-            searchPage
-                    .konTact();//переходим в контакты
+            mainPage
+                    .contactClicl();//переходим в контакты
             kontacPage
-                    .sravTel().sravPoch();//сверяем телефон и почту
+                    .checkingTheNumber().checkingMail();//сверяем телефон и почту
 
             }
 
